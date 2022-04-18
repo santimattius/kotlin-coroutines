@@ -1,6 +1,10 @@
+package basics
+
+import header
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
+import someTime
 
 fun main() {
     coroutinesVsThreads()
@@ -8,7 +12,7 @@ fun main() {
 
 
 private fun coroutinesVsThreads() {
-    header("Corrutinas vs Threads")
+    header("Coroutine vs Threads")
     runBlocking {
         repeat((1..1_000_000).count()) {
             launch {

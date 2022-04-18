@@ -1,13 +1,13 @@
 package coroutines
 
-import endMsg
+import endMessage
 import header
 import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import multi
 import someTime
-import startMsg
+import startMessage
 
 fun main() {
     executeDeferred()
@@ -17,15 +17,15 @@ private fun executeDeferred() {
     runBlocking {
         header("Deferred")
         val deferred = async {
-            startMsg()
+            startMessage()
             delay(someTime())
             println("deferred...")
-            endMsg()
+            endMessage()
             5 multi 2
-            "Hola"
+            "Hello"
         }
         println("Deferred: $deferred")
-        println("Valor del Deferred.await: ${deferred.await()}")
+        println("Deferred.await: ${deferred.await()}")
 
         val result = async {
             3 multi 3

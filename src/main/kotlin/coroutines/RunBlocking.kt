@@ -1,11 +1,11 @@
 package coroutines
 
-import endMsg
+import endMessage
 import header
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import someTime
-import startMsg
+import startMessage
 
 fun main() {
     executeRunBlocking()
@@ -14,9 +14,9 @@ fun main() {
 private fun executeRunBlocking() {
     header("RunBlocking")
     runBlocking {
-        startMsg()
+        startMessage()
         delay(someTime())
         println("runBlocking...")
-        endMsg()
+        endMessage()
     }
 }

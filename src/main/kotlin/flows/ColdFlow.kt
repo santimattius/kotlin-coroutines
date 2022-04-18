@@ -14,7 +14,7 @@ private fun coldFlow() {
     header("Flows are Cold")
     runBlocking {
         val dataFlow = getDataByFlow()
-        println("esperando...")
+        println("waiting...")
         delay(someTime())
         dataFlow.collect { println(it) }
     }

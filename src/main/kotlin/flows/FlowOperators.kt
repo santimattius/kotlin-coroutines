@@ -1,6 +1,6 @@
 package flows
 
-import convertCelsToFahr
+import convertCelsiusToFarenheit
 import getDataByFlow
 import header
 import kotlinx.coroutines.flow.filter
@@ -21,7 +21,7 @@ private fun flowOperators() {
         getDataByFlow()
             .map {
                 //setFormat(it)
-                setFormat(convertCelsToFahr(it), "F")
+                setFormat(convertCelsiusToFarenheit(it), "F")
             }
         //.collect { println(it) }
 
@@ -39,7 +39,7 @@ private fun flowOperators() {
         getDataByFlow()
             .transform {
                 emit(setFormat(it))
-                emit(setFormat(convertCelsToFahr(it), "F"))
+                emit(setFormat(convertCelsiusToFarenheit(it), "F"))
             }
         //.collect { println(it) }
 

@@ -17,18 +17,18 @@ fun header(title: String) {
  */
 fun someTime(): Long = Random.nextLong(500, 2_000)
 
-fun startMsg() {
-    println("Comenzando corrutina -${Thread.currentThread().name}-")
+fun startMessage() {
+    println("Start coroutine -${Thread.currentThread().name}-")
 }
 
-fun endMsg() {
-    println("Corrutina -${Thread.currentThread().name}- finalizada")
+fun endMessage() {
+    println("Coroutine -${Thread.currentThread().name}- finish")
 }
 
 
 infix fun Int.multi(that: Int): Int = this * that
 
-fun convertCelsToFahr(cels: Float): Float = ((cels * 9) / 5) + 32
+fun convertCelsiusToFarenheit(celsius: Float): Float = ((celsius * 9) / 5) + 32
 
 fun setFormat(temp: Float, degree: String = "C"): String = String.format(
     Locale.getDefault(),

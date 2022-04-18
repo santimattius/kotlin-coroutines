@@ -1,12 +1,12 @@
 package coroutines
 
-import endMsg
+import endMessage
 import header
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import someTime
-import startMsg
+import startMessage
 
 fun main() {
     executeLaunch()
@@ -16,10 +16,10 @@ private fun executeLaunch() {
     runBlocking {
         header("Launch")
         launch {
-            startMsg()
+            startMessage()
             delay(someTime())
             println("launch...")
-            endMsg()
+            endMessage()
         }
     }
 }

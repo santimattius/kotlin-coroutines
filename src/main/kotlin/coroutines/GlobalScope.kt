@@ -1,13 +1,13 @@
 package coroutines
 
-import endMsg
+import endMessage
 import header
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import someTime
-import startMsg
+import startMessage
 
 @DelicateCoroutinesApi
 fun main() {
@@ -18,9 +18,9 @@ fun main() {
 private fun globalScope() {
     header("Global Scope")
     GlobalScope.launch {
-        startMsg()
+        startMessage()
         delay(someTime())
-        println("Mi corrutina")
-        endMsg()
+        println("My Coroutine")
+        endMessage()
     }
 }
