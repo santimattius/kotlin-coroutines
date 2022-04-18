@@ -18,7 +18,9 @@ There are three entities involved in streams of data:
 - (Optional) Intermediaries can modify each value emitted into the stream or the stream itself.
 - A consumer consumes the values from the stream.
 
-[Image]
+<p align="center">
+  <img width="450" src="https://github.com/santimattius/kotlin-coroutines/blob/master/src/main/resources/flow-entities.png?raw=true" alt="flows"/>
+</p>
 
 ## Buffer Flow
 
