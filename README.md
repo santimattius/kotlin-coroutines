@@ -2,13 +2,11 @@
 
 Coroutine note project, include example, reference to documentation.
 
-Topics:
+**Topics:**
 
-- Coroutine
-- Thread
-- Flows
-- Channels
-- Sequence
+- [Coroutine basics](https://github.com/santimattius/kotlin-coroutines/tree/master/src/main/kotlin/basics)
+- [Channels](https://github.com/santimattius/kotlin-coroutines/tree/master/src/main/kotlin/channels)
+- [Flows](https://github.com/santimattius/kotlin-coroutines/tree/master/src/main/kotlin/flows)
 
 ## Coroutines
 
