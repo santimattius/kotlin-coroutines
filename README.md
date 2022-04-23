@@ -1,4 +1,8 @@
-# kotlin-coroutines
+<p align="center">
+ <img height="300" src="https://github.com/santimattius/kotlin-coroutines/blob/master/src/main/resources/kotlin-coroutines.png"  />
+</p>
+
+# Kotlin Coroutines with Examples
 
 Coroutine note project, include example, reference to documentation.
 
