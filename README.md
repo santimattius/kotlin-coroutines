@@ -86,7 +86,7 @@ Check full documentation [here](https://kotlinlang.org/docs/coroutines-overview.
 - [Exceptions in Kotlin Flows](https://elizarov.medium.com/exceptions-in-kotlin-flows-b59643c940fb)
 - [Callbacks and Kotlin Flows](https://elizarov.medium.com/callbacks-and-kotlin-flows-2b53aa2525cf)
 
-### Mindoks
+### Mindorks
 
 - [What is Flow in Kotlin and how to use it in Android Project?](https://blog.mindorks.com/what-is-flow-in-kotlin-and-how-to-use-it-in-android-project)
 - [Understanding Terminal Operators in Kotlin Flow](https://blog.mindorks.com/terminal-operators-in-kotlin-flow)
